@@ -1,0 +1,6 @@
+openai
+streamlit
+pandas
+joblib
+scikit-learn
+requests
