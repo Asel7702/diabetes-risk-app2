@@ -12,7 +12,7 @@ def load_model():
     model_path = "diabetes_model.pkl"
 
     if not os.path.exists(model_path):
-        url = "sha256:56173ef68d529335ea922b057c3aed7c6d785736037fdcdf0e35ce030d9e4465"
+        url = "https://github.com/Asel7702/diabetes-risk-app2/releases/download/v1/diabetes_model.pkl"
         response = requests.get(url)
 
         if response.status_code != 200:
