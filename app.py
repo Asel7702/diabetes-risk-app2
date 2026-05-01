@@ -14,9 +14,11 @@ def load_model():
     if not os.path.exists(model_path):
         file_id = "10GJ21ni9XD3qSWtPaEztPgPuyra0293Q"
         url = f"https://drive.google.com/uc?id={file_id}"
-        gdown.download(url, model_path, quiet=False)
+        gdown.download(url, model_path, quiet=False, fuzzy=True)
 
     return joblib.load(model_path)
+
+model = load_model()
 # =========================
 # PAGE CONFIG
 # =========================
