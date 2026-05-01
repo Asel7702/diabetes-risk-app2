@@ -12,8 +12,8 @@ def load_model():
     model_path = "diabetes_model.pkl"
 
     if not os.path.exists(model_path):
-        file_id = "10GJ21ni9XD3qSWtPaEztPgPuyra0293Q"
-        url = f"https://drive.google.com/uc?id={file_id}"
+        file_id = "10GJ21ni9XD3qSWtPaEztPgPuyraO293Q/view?usp=drivesdk"
+        url = f"https://drive.google.com/file/d/={file_id}"
         gdown.download(url, model_path, quiet=False)
 
     return joblib.load(model_path)
